@@ -1,0 +1,38 @@
+{
+  "BindAddress": ":53",
+  "PrimaryDNS": [
+    {
+      "Name": "AliDNS",
+      "Address": "223.5.5.5:53",
+      "Protocol": "udp",
+      "SOCKS5Address": "",
+      "Timeout": 6,
+      "EDNSClientSubnet": {
+        "Policy": "disable",
+        "ExternalIP": ""
+      }
+    }
+  ],
+  "AlternativeDNS": [
+    {
+      "Name": "OpenDNS",
+      "Address": "47.75.44.102:5445",
+      "Protocol": "udp",
+      "SOCKS5Address": "",
+      "Timeout": 6,
+      "EDNSClientSubnet": {
+        "Policy": "disable",
+        "ExternalIP": ""
+      }
+    }
+  ],
+  "OnlyPrimaryDNS": false,
+  "RedirectIPv6Record": false,
+  "IPNetworkFile": "./ip_network",
+  "DomainFile": "./gfwlist.txt",
+  "DomainBase64Decode": true,
+  "HostsFile": "./hosts",
+  "MinimumTTL": 0,
+  "CacheSize" : 10000,
+  "RejectQtype": [255]
+}
